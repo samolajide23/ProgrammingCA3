@@ -1,69 +1,73 @@
 package org.example;
 
-public class Student {
+import java.util.ArrayList;
 
-    private String studentId;
-    private String bookingId;
-    private String bookingDateAndTime;
-    private String returnDateAndTime;
-    private String computerType;
-    private String computerAssetTag;
 
-    public Student(String studentId, String bookingId, String bookingDateAndTime, String returnDateAndTime, String computerType, String computerAssetTag) {
-        this.studentId = studentId;
-        this.bookingId = bookingId;
-        this.bookingDateAndTime = bookingDateAndTime;
-        this.returnDateAndTime = returnDateAndTime;
-        this.computerType = computerType;
-        this.computerAssetTag = computerAssetTag;
+public class Student
+{
+
+    private String name;
+    private String id;
+    private String email;
+    private String telephone;
+    private ArrayList<String> computersOnLoan;
+
+    public Student(String name, String id, String email, String telephone, ArrayList<String> computersOnLoan) {
+        this.name = name;
+        this.id = id;
+        this.email = email;
+        this.telephone = telephone;
+        this.computersOnLoan = computersOnLoan;
     }
 
-    public String getBookingId() {
-        return bookingId;
+    public String getName() {
+        return name;
     }
 
-    public void setBookingId(String bookingId) {
-        this.bookingId = bookingId;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getBookingDateAndTime() {
-        return bookingDateAndTime;
+    public String getId() {
+        return id;
     }
 
-    public void setBookingDateAndTime(String bookingDateAndTime) {
-        this.bookingDateAndTime = bookingDateAndTime;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getReturnDateAndTime() {
-        return returnDateAndTime;
+    public String getEmail() {
+        return email;
     }
 
-    public void setReturnDateAndTime(String returnDateAndTime) {
-        this.returnDateAndTime = returnDateAndTime;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getComputerType() {
-        return computerType;
+    public String getTelephone() {
+        return telephone;
     }
 
-    public void setComputerType(String computerType) {
-        this.computerType = computerType;
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
     }
 
-    public String getComputerAssetTag() {
-        return computerAssetTag;
+    public ArrayList<String> getComputersOnLoan() {
+        return computersOnLoan;
     }
 
-    public void setComputerAssetTag(String computerAssetTag) {
-        this.computerAssetTag = computerAssetTag;
+    public void setComputersOnLoan(ArrayList<String> computersOnLoan) {
+        this.computersOnLoan = computersOnLoan;
     }
 
-    public String getStudentId() {
-        return studentId;
+    @Override
+    public String toString() {
+        return  "\nId: '" +Colours.PURPLE + id + Colours.RESET + '\'' +
+                "\n{Name: '" + name + '\'' +
+                ",  Email: '" + email + '\'' +
+                ",  Telephone: '" + telephone + '\'' +
+                ",  ComputersOnLoan: " + computersOnLoan +
+                "}";
     }
-
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-
 }
+

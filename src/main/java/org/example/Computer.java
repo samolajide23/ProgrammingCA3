@@ -1,6 +1,7 @@
 package org.example;
 
-public class Computer {
+import java.time.LocalDate;
+    abstract public class Computer {
 
 
     private String manufacturer;
@@ -9,16 +10,16 @@ public class Computer {
     private String diskSize;
     private String weight;
     private String assetTag;
-    private String PurchaseDate;
+    private LocalDate PurchaseDate;
 
-    public Computer(String manufacturer, String processor, String ram, String diskSize, String weight, String assetTag, String purchaseDate) {
+    public Computer(String manufacturer, String processor, String ram, String diskSize, String weight, String assetTag, String strDate) {
         this.manufacturer = manufacturer;
         this.processor = processor;
         this.ram = ram;
         this.diskSize = diskSize;
         this.weight = weight;
         this.assetTag = assetTag;
-        PurchaseDate = purchaseDate;
+        this.PurchaseDate = LocalDate.parse(strDate);
     }
 
     public String getManufacturer() {
@@ -34,7 +35,7 @@ public class Computer {
     }
 
     public void setProcessor(String processor) {
-        processor = processor;
+        this.processor = processor;
     }
 
     public String getRam() {
@@ -69,11 +70,11 @@ public class Computer {
         this.assetTag = assetTag;
     }
 
-    public String getPurchaseDate() {
+    public LocalDate getPurchaseDate() {
         return PurchaseDate;
     }
 
-    public void setPurchaseDate(String purchaseDate) {
+    public void setPurchaseDate(LocalDate purchaseDate) {
         PurchaseDate = purchaseDate;
     }
 

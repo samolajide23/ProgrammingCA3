@@ -1,0 +1,10 @@
+Dell,Intel Core i5 9th Gen,2GB,1TB,3.5kg,DKIT-11101,2020-11-18,Lenovo D22-10
+Dell,Intel Core i5 9th Gen,2GB,1TB,3.5kg,DKIT-11102,2020-11-18,Lenovo D22-10
+Dell,Intel Core i5 9th Gen,4GB,1TB,3.5kg,DKIT-11103,2020-11-18,Lenovo D22-10
+Dell,Intel Core i5 9th Gen,4GB,1TB,3.5kg,DKIT-11104,2020-11-18,Lenovo D22-10
+Dell,Intel Core i5 9th Gen,8GB,1TB,3.5kg,DKIT-11105,2020-11-18,Elegoo
+Dell,Intel Core i5 9th Gen,8GB,1TB,3.5kg,DKIT-11106,2020-11-18,Elegoo
+Dell,Intel Core i5 9th Gen,16GB,1TB,3.5kg,DKIT-11107,2020-11-18,Elegoo
+Dell,Intel Core i5 9th Gen,16GB,1TB,3.5kg,DKIT-11108,2020-11-18,AOC E970SWN
+Dell,Intel Core i5 9th Gen,16GB,1TB,3.5kg,DKIT-11109,2020-11-18,AOC E970SWN
+Dell,Intel Core i7 3th Gen,32GB,2TB,3.5kg,DKIT-11110,2020-11-18,AOC E970SWN
